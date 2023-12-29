@@ -1,0 +1,36 @@
+.nav {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 10px 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav h1 {
+  font-family: cursive;
+  font-size: 40px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+}
+.nav ul li {
+  font-size: 18px;
+}
+.nav ul li:hover {
+  transform: scale(1.1);
+  color: red;
+}
+
+@media all and (max-width: 800px) {
+  .nav {
+    flex-direction: column;
+  }
+  .nav h1 {
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+  }
+}
